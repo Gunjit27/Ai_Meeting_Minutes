@@ -70,7 +70,7 @@ This project uses **CrewAI** and **OpenAI Whisper** to:
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/Gunjit27/ai_meeting_minutes.git
+git clone https://github.com/Gunjit27/Ai_Meeting_Minutes.git
 cd ai-meeting-minutes
 ```
 
