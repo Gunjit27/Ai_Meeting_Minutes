@@ -1,56 +1,125 @@
-# {{crew_name}} Crew
+# AI Meeting Minutes Generator
 
-Welcome to the {{crew_name}} Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Automate the process of **transcribing meetings** and **generating professional meeting minutes** using AI!
+
+This project uses **CrewAI** and **OpenAI Whisper** to:
+- Transcribe an audio recording of a meeting
+- Summarize the meeting
+- Extract action items
+- Perform sentiment analysis
+- Generate a complete, well-structured Meeting Minutes document in Markdown format
+
+---
+
+## Features
+
+✅ Automatic transcription of audio meetings (using Whisper)  
+✅ Summarization of main points discussed  
+✅ Extraction of actionable tasks  
+✅ Sentiment analysis of the meeting tone  
+✅ Full meeting minutes document generation in Markdown  
+✅ Modular CrewAI structure for easy customization and scaling
+
+---
+
+## How It Works
+
+1. **Audio Transcription**: The meeting `.wav` file is transcribed using OpenAI Whisper.
+2. **Text Analysis**: CrewAI agents summarize the transcript, extract action items, and perform sentiment analysis.
+3. **Meeting Minutes Writing**: A final professional meeting minutes document is created, combining all outputs.
+4. **Files are Saved**:
+   - `summary.txt`
+   - `action_items.txt`
+   - `sentiment.txt`
+   - `meeting_minutes.md`
+
+---
+
+## Project Structure
+
+```bash
+├── crews/
+│   └── meeting_minutes_crew/
+│       ├── meeting_minutes_crew.py
+│       ├── config/
+│       │   ├── agents.yaml
+│       │   └── tasks.yaml
+├── meeting_minutes/
+│   └── (Generated output files will be stored here)
+├── main_flow.py
+├── .env
+└── README.md
+
+```
+
+---
+
+## Requirements
+
+- Python 3.10+
+- [CrewAI](https://docs.crewai.com/)
+- [OpenAI Whisper](https://github.com/openai/whisper)
+- [pydantic](https://docs.pydantic.dev/)
+- [python-dotenv](https://pypi.org/project/python-dotenv/)
+- ffmpeg (required by Whisper for audio processing)
+
+---
 
 ## Installation
 
-Ensure you have Python >=3.10 <3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
-
-First, if you haven't already, install uv:
+1. **Clone the repository**:
 
 ```bash
-pip install uv
+git clone https://github.com/Gunjit27/ai_meeting_minutes.git
+cd ai-meeting-minutes
 ```
 
-Next, navigate to your project directory and install the dependencies:
-
-(Optional) Lock the dependencies and install them by using the CLI command:
+2. **Install dependancies**:
 ```bash
-crewai install
+pip install crewai
+pip install "crewai[tools]"
+pip install git+https://github.com/openai/whisper.git
 ```
 
-### Customizing
+3. **Install ffmpeg**:
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+Download ffmpeg and ensure it's added to your PATH.
 
-- Modify `src/ai_meeting_minutes/config/agents.yaml` to define your agents
-- Modify `src/ai_meeting_minutes/config/tasks.yaml` to define your tasks
-- Modify `src/ai_meeting_minutes/crew.py` to add your own logic, tools and specific args
-- Modify `src/ai_meeting_minutes/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your flow and begin execution, run this from the root folder of your project:
+4. **Set up environment variables**:
 
 ```bash
-crewai run
+touch .env
 ```
 
-This command initializes the ai-meeting-minutes Flow as defined in your configuration.
+Specify model
+```bash
+MODEL=gemini/gemini-1.5-flash
+GEMINI_API_KEY=YOUR-API-KEY
+```
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## Usage
 
-## Understanding Your Crew
+1. Place your `.wav` audio file (e.g., `EarningsCall.wav`) inside the base directory (`\ai_meeting_minutes` or update accordingly).
 
-The ai-meeting-minutes Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+2. Run the project:
 
-## Support
+    ```bash
+    python main.py
+    ```
 
-For support, questions, or feedback regarding the {{crew_name}} Crew or crewAI.
+This will automatically:
+- Transcribe the audio
+- Generate summaries, action items, and sentiment analysis
+- Create the final meeting minutes document
 
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+Outputs will be saved inside the `meeting_minutes/` folder.
 
-Let's create wonders together with the power and simplicity of crewAI.
+---
+
+## Configuration
+
+Agent and Task configurations are located in YAML files:
+- `config/agents.yaml`
+- `config/tasks.yaml`
+
+You can easily modify agent behaviors and task descriptions there without touching the main code!
