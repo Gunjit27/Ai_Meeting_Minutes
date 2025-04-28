@@ -1,0 +1,116 @@
+1
+00:00:00,000 --> 00:00:05,920
+Good afternoon everyone and welcome to FinTech Plus Sync's second quarter 2023
+
+2
+00:00:05,920 --> 00:00:12,400
+earnings call. I'm John Doe, CEO of FinTech Plus. We've had a stellar Q2 with a
+
+3
+00:00:12,400 --> 00:00:20,580
+revenue of 125 million, a 25% increase year over year. Our gross profit margin
+
+4
+00:00:20,580 --> 00:00:25,640
+stands at a solid 58% due in part to cost efficiencies gained from our scalable
+
+5
+00:00:25,640 --> 00:00:33,520
+business model. Our EBITDA has surged to 37.5 million translating to a
+
+6
+00:00:33,520 --> 00:00:38,760
+remarkable 30% EBITDA margin. Our net income for the quarter rose to 16
+
+7
+00:00:38,760 --> 00:00:45,560
+million which is a noteworthy increase from 10 million in Q2 2022. Our total
+
+8
+00:00:45,560 --> 00:00:48,920
+addressable market has grown substantially thanks to the expansion of
+
+9
+00:00:48,920 --> 00:00:55,520
+our high yield savings product line and the new robo advisor platform. We've been
+
+10
+00:00:55,520 --> 00:01:00,080
+diversifying our asset backed securities portfolio investing heavily in
+
+11
+00:01:00,080 --> 00:01:04,880
+collateralized debt obligations and residential mortgage backed securities.
+
+12
+00:01:04,880 --> 00:01:10,080
+We've also invested 25 million in AAA rated corporate bonds enhancing our risk
+
+13
+00:01:10,080 --> 00:01:17,440
+adjusted returns. As for our balance sheet total assets reached 1.5 billion
+
+14
+00:01:17,440 --> 00:01:22,800
+with total liabilities at 900 million leaving us with a solid equity base of
+
+15
+00:01:22,960 --> 00:01:30,160
+600 million. Our debt to equity ratio stands at 1.5, a healthy figure considering our
+
+16
+00:01:30,160 --> 00:01:37,120
+expansionary phase. We continue to see substantial organic user growth with
+
+17
+00:01:37,120 --> 00:01:43,440
+customer acquisition cost dropping by 15% and lifetime value growing by 25%.
+
+18
+00:01:43,440 --> 00:01:51,920
+Our LTV CAC ratio is at an impressive 3.5 x.
+
+19
+00:01:54,240 --> 00:02:00,800
+In terms of risk management we have a value at risk model in place with a 99%
+
+20
+00:02:00,800 --> 00:02:06,160
+confidence level indicating that our maximum loss will not exceed 5 million in the next
+
+21
+00:02:06,160 --> 00:02:11,920
+trading day. We've adopted a conservative approach to managing our leverage and have
+
+22
+00:02:11,920 --> 00:02:19,520
+a healthy tier one capital ratio of 12.5%. Our forecast for the coming quarter is
+
+23
+00:02:19,520 --> 00:02:24,960
+positive. We expect revenue to be around 135 million and 8% quarter over quarter
+
+24
+00:02:24,960 --> 00:02:29,840
+growth driven primarily by our cutting edge blockchain chain solutions and AI
+
+25
+00:02:29,840 --> 00:02:36,080
+driven predictive analytics. We're also excited about the upcoming IPO of our
+
+26
+00:02:36,080 --> 00:02:41,840
+fintech subsidiary pay plus which we expect to raise 200 million significantly
+
+27
+00:02:41,840 --> 00:02:47,600
+bolstering our liquidity and paving the way for aggressive growth strategies. We
+
+28
+00:02:47,600 --> 00:02:51,760
+thank our shareholders for their continued faith in us and we look forward to an even
+
+29
+00:02:51,760 --> 00:02:59,920
+more successful Q3. Thank you so much.
+

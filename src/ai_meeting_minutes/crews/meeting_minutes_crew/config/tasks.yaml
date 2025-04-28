@@ -1,0 +1,34 @@
+meeting_minutes_summary_task:
+  description: >
+    Process the provided meeting transcript: 
+    {transcript}
+
+    Your task is to generate three outputs based on the transcript:
+
+    1. **Summary** – Write a clear and concise summary of the main points discussed. Save it as `summary.txt` in the `meeting_minutes` directory (provided by the tool).
+    
+    2. **Action Items** – Extract actionable follow-ups from the transcript and format them as a bullet list:
+       - Action item 1
+       - Action item 2
+       - ...
+       Save this list as `action_items.txt` in the `meeting_minutes` directory.
+
+    3. **Sentiment Analysis** – Analyze the overall tone and emotional context of the conversation. Indicate whether the sentiment is positive, negative, or neutral, and briefly explain your reasoning. Save this analysis as `sentiment.txt` in the `meeting_minutes` directory.
+
+  expected_output: >
+    A summary of the meeting, a list of action items, and a sentiment analysis.
+  agent: meeting_minutes_summarizer
+
+meeting_minutes_writing_task:
+  description: >
+    Write the meeting minutes based on the {transcript},summary, action items and sentiment.  This should give everything needed to know based on summary and action items.
+    Put them into a nice markdown document.
+
+    - Use Todays Date for the meeting date
+    - Use the company name GunjitAI for the company name
+    - User Gunjit for the name of the organizer
+    - Create a list of attendees from the transcript (do not make up any if needed)
+    - The location was on Zoom
+  expected_output: >
+    A meeting minutes document
+  agent: meeting_minutes_writer
